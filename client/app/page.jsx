@@ -33,19 +33,25 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-screen flex-wrap flex gap-20 md:flex-row justify-center items-center h-screen bg-gray-200">
+    <div className=" flex gap-20 md:flex-row justify-center items-center bg-gray-200 h-screen">
       {loading ? (
         <p className="text-lg font-medium text-gray-600">Cargando...</p>
       ) : (
-        <div className="flex flex-col justify-center items-center gap-8 p-6 bg-gray-100 rounded-lg shadow-lg">
+        <div className="flex flex-col justify-center items-center gap-8 p-6 bg-gray-100 rounded-lg shadow-lg w-[40%] h-full">
           {dolarTypes.map(({ title, compra, venta }) => (
             <div className="mb-8 w-80">
-              <h2 className="text-3xl font-bold text-center text-gray-700">
+              <p className="text-2xl font-bold text-center text-gray-700">
                 {title}
-              </h2>
+              </p>
               <div className="flex flex-row justify-between text-lg text-gray-600">
-                <p>Compra: {compra}</p>
-                <p>Venta: {venta}</p>
+                <label>
+                  <p className="text-green-400">Compra: </p>
+                  <p>{compra}</p>
+                </label>
+                <label>
+                  <p className="text-red-400">Venta:</p>
+                  <p> {venta}</p>
+                </label>
               </div>
             </div>
           ))}
@@ -55,7 +61,8 @@ export default function Home() {
       {loading ? (
         <p className="text-lg font-medium text-gray-600">Cargando...</p>
       ) : (
-        <div className="md:w-[30%]">
+        <div className="w-[35%] flex flex-col gap-8 justify-center h-screen p-4">
+          <p className="text-end text-xs">Actualizacion: {dolar.blue.fecha}</p>
           <DolarChart data={dolarBlue} />
           <DolarChart data={dolarOficial} />
         </div>

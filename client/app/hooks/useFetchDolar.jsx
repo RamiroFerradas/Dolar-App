@@ -32,7 +32,7 @@ export default function useFetchDolar() {
       console.error(error);
     }
   }
-
+  console.log(dolar);
   useEffect(() => {
     fetchDolar();
   }, []);
