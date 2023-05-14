@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
 import { meses } from "../utils/meses";
 const useEvolucionDolar = () => {
+  const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
   const [dolarBlue, setDolarBlue] = useState([]);
   const [dolarOficial, setDolarOficial] = useState([]);
+  const [loadEvolution, setloadEvolution] = useState(true);
 
   useEffect(() => {
     const getEvolucionDolar = async () => {
       try {
-        const [blueRes, oficialRes, turistaRes] = await Promise.all([
-          fetch("http://localhost:3001/api/evolucion/dolarblue"),
-          fetch("http://localhost:3001/api/evolucion/dolaroficial"),
+        const [blueRes, oficialRes] = await Promise.all([
+          fetch(`${BASE_URL}/api/evolucion/dolarblue`),
+          fetch(`${BASE_URL}/api/evolucion/dolaroficial`),
         ]);
 
         const [blueData, oficialData] = await Promise.all([
@@ -27,15 +30,15 @@ const useEvolucionDolar = () => {
           labels: oficialData.meses.map((mes) => meses[mes.mes - 1]),
           values: oficialData.meses.map((mes) => Number(Math.floor(mes.valor))),
         });
+        setloadEvolution(false);
       } catch (error) {
         console.error(error);
       }
     };
-    console.log();
     getEvolucionDolar();
   }, []);
 
-  return { dolarBlue, dolarOficial };
+  return { dolarBlue, dolarOficial, loadEvolution };
 };
 
 export default useEvolucionDolar;

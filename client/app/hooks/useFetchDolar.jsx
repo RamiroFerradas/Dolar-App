@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 
 export default function useFetchDolar() {
+  const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
   const [loading, setLoading] = useState(true);
   const [dolar, setDolar] = useState({
     blue: {},
@@ -12,11 +14,10 @@ export default function useFetchDolar() {
 
   async function fetchDolar() {
     try {
-      const BASE_URL = "http://localhost:3001/api";
-      const blue = await fetch(`${BASE_URL}/dolarblue`);
-      const contadoliqui = await fetch(`${BASE_URL}/contadoliqui`);
-      const dolarturista = await fetch(`${BASE_URL}/dolarturista`);
-      const dolaroficial = await fetch(`${BASE_URL}/dolaroficial`);
+      const blue = await fetch(`${BASE_URL}/api/dolarblue`);
+      const contadoliqui = await fetch(`${BASE_URL}/api/contadoliqui`);
+      const dolarturista = await fetch(`${BASE_URL}/api/dolarturista`);
+      const dolaroficial = await fetch(`${BASE_URL}/api/dolaroficial`);
 
       const data = {
         blue: await blue.json(),
