@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex gap-20 md:flex-row justify-center items-center h-screen bg-gray-200">
+    <div className="w-screen flex-wrap flex gap-20 md:flex-row justify-center items-center h-screen bg-gray-200">
       {loading ? (
         <p className="text-lg font-medium text-gray-600">Cargando...</p>
       ) : (
@@ -55,7 +55,7 @@ export default function Home() {
       {loading ? (
         <p className="text-lg font-medium text-gray-600">Cargando...</p>
       ) : (
-        <div className="w-[30%]">
+        <div className="md:w-[30%]">
           <DolarChart data={dolarBlue} />
           <DolarChart data={dolarOficial} />
         </div>
