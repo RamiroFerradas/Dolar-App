@@ -8,6 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        activo: "#ff0000", // Puedes ajustar el color aquí
+      },
+
+      borderWidth: {
+        2: "2px", // Ancho del borde personalizado
+      },
+      boxShadow: {
+        activo: "0px 1px 0px 0px #ff0000", // Sombra para simular la línea
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

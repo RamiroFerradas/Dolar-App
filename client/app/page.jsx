@@ -1,6 +1,6 @@
 "use client";
 import DolarChart from "./DolarChart";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import useEvolucionDolar from "./hooks/useEvolutionDolar";
 import useFetchDolar from "./hooks/useFetchDolar";
 
@@ -35,15 +35,15 @@ export default function Home() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="h-screen flex flex-col gap-20 md:flex-row justify-center items-center bg-gray-200">
         {loading ? (
           <p className="text-lg font-medium text-gray-600">Cargando...</p>
         ) : (
           <div className="flex flex-col justify-center items-center gap-8 p-6 bg-gray-100 rounded-lg shadow-lg w-[40% h-full">
-            {dolarTypes.map(({ title, compra, venta }) => (
-              <div className="mb-8 w-80">
+            {dolarTypes.map(({ title, compra, venta }, i) => (
+              <div key={i} className="mb-8 w-80">
                 <p className="text-2xl font-bold text-center text-gray-700">
                   {title}
                 </p>
