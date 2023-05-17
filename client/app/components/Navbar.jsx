@@ -2,16 +2,19 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex justify-between items-center h-20 p-4 bg-green-200 overflow-hidden">
       <Link href="/">
-        <img
-          src="/static/dolarslogo.png"
+        <Image
+          src="/assets/dolarslogo.png"
           alt="LogoDolars"
-          className="h-14 object-contain w-40"
+          className="object-contain"
+          height={30}
+          width={40}
         />
       </Link>
 
