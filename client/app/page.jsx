@@ -15,7 +15,7 @@ export default async function Home() {
       <div className="h-screen flex flex-col gap-20 md:flex-row justify-center items-center bg-gray-200">
         <DolarInfo dolar={dolar} />
         <div className="w-[35%] flex flex-col gap-8 justify-center h-screen p-4">
-          {/* <p className="text-end text-xs">Actualizacion: {dolar.blue.fecha}</p> */}
+          <p className="text-end text-xs">Actualizacion: {dolar.blue.fecha}</p>
 
           <div>
             <DolarChart dolarBlue={dolarBlue} />
