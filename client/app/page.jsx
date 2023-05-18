@@ -18,7 +18,7 @@ export default async function Home() {
           <p className="text-end text-xs">Actualizacion: {dolar.blue.fecha}</p>
 
           <div>
-            <DolarChart dolarBlue={dolarBlue} />
+            <DolarChart data={dolarBlue} />
             <DolarChart data={dolarOficial} />
           </div>
         </div>
