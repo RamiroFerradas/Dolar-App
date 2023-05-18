@@ -1,2 +1,2 @@
-# Dolar-App
-# Dolar-app
+# DolArs
+
