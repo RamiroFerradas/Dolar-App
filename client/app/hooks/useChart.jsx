@@ -1,7 +1,7 @@
-import Chart from "chart.js/auto";
+import { Chart } from "chart.js/auto";
 import { useEffect, useRef, useState } from "react";
 
-function DolarChart({ data }) {
+export default function useChart({ data }) {
   const chartContainer = useRef(null);
   const [chart, setChart] = useState(null);
 
@@ -52,9 +52,7 @@ function DolarChart({ data }) {
         })
       );
     }
-  }, [data]);
+  }, [chart, data]);
 
   return <canvas ref={chartContainer} />;
 }
-
-export default DolarChart;
