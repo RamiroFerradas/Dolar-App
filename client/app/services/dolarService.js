@@ -2,16 +2,6 @@ import { meses } from "../utils/meses";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
-const fetchData = async (url) => {
-  try {
-    const response = await fetch(url);
-    return response.json();
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
-};
-
 export const fetchDolar = async () => {
   try {
     const [
@@ -52,11 +42,6 @@ export const getEvolucionDolar = async () => {
       fetch(`${BASE_URL}/api/evolucion/dolaroficial`),
     ]);
 
-    // const blueRes = await fetchData(`${BASE_URL}/api/evolucion/dolarblue`);
-    // const oficialRes = await fetchData(
-    //   `${BASE_URL}/api/evolucion/dolaroficial`
-    // );
-
     const blue = await blueRes.json();
     const oficial = await oficialRes.json();
 
@@ -79,5 +64,16 @@ export const getEvolucionDolar = async () => {
   } catch (error) {
     console.error(error);
     throw error.message;
+  }
+};
+
+export const fetchBancoData = async (endpoint) => {
+  try {
+    const response = await fetch(`${BASE_URL}/api${endpoint}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error al obtener los datos del banco", error);
+    throw error;
   }
 };

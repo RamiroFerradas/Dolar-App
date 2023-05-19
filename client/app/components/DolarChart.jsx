@@ -22,22 +22,6 @@ ChartJS.register(
   Filler
 );
 
-var beneficios = [0, 56, 20, 36, 80, 40, 30, -20, 25, 30, 12, 60];
-var meses = [
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
-  "Mayo",
-  "Junio",
-  "Julio",
-  "Agosto",
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-];
-
 export default function DolarChart({ data }) {
   var midata = {
     labels: data.labels,
@@ -63,7 +47,8 @@ export default function DolarChart({ data }) {
   var misoptions = {
     scales: {
       y: {
-        min: 0,
+        min: 100,
+        max: 500,
       },
       x: {
         ticks: { color: "rgb(255, 99, 132)" },
