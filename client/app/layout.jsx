@@ -3,7 +3,6 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import useNavbarHeight from "./hooks/useNavbarHeight";
 
 const inter = Inter({ subsets: ["latin"] });
 

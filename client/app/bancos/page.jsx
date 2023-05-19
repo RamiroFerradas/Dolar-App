@@ -2,7 +2,6 @@
 import { BancosJson } from "../utils/bancos";
 import useFetchBancos from "../hooks/useFetchBancos";
 import SkeletonField from "../components/SkeletonField";
-import useNavbarHeight from "../hooks/useNavbarHeight";
 
 export default function Bancos() {
   const { bancoSeleccionado, setBancoSeleccionado, loading } = useFetchBancos();
