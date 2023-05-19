@@ -1,4 +1,4 @@
 function Calculadora() {
-  return <div>page</div>;
+  return <div>calculadora</div>;
 }
 export default Calculadora;
