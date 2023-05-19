@@ -4,10 +4,12 @@
     "es6": true,
     "node": true // Agrega esta línea para incluir el entorno de Node.js
   },
+
   "globals": {
     "process": true // Agrega esta línea para declarar que la variable process está definida
   },
   "extends": [
+    "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
@@ -16,7 +18,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["react", "react-hooks"],
@@ -29,6 +31,7 @@
     "react/jsx-key": [
       "warn",
       { "checkFragmentShorthand": true, "checkKeyMustBeforeSpread": true }
-    ]
+    ],
+    "max-len": ["error", 140]
   }
 }
