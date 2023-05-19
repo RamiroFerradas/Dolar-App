@@ -1,13 +1,14 @@
-"use client";
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Routes } from "../routes/routes";
 import Navigation from "./Navigation";
 
-export default function Navbar() {
+export default function Navbar({ refNav }) {
   return (
-    <nav className="flex justify-between items-center h-20 p-4 bg-green-200 overflow-hidden">
+    <nav
+      ref={refNav}
+      className="flex justify-between items-center h-20 p-4 bg-green-200 overflow-hidden"
+    >
       <Link href={Routes.HOME.path}>
         <Image
           src="/assets/dolarslogo.png"

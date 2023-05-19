@@ -14,30 +14,29 @@ export default function useFetchBancos() {
 
   const [loading, setloading] = useState(true);
 
+  const fetchData = async () => {
+    try {
+      setloading(true);
+      const data = await fetchBancoData(bancoSeleccionado.endpoint);
+
+      const { compra, venta, fecha } = data;
+
+      setBancoSeleccionado((prevState) => ({
+        ...prevState,
+        compra,
+        venta,
+        fecha,
+      }));
+      setloading(false);
+    } catch (error) {
+      console.error("Error al obtener los datos del banco", error);
+    }
+  };
   useEffect(() => {
-    setloading(true);
-    const fetchData = async () => {
-      try {
-        const data = await fetchBancoData(bancoSeleccionado.endpoint);
-
-        const { compra, venta, fecha } = data;
-
-        setBancoSeleccionado((prevState) => ({
-          ...prevState,
-          compra,
-          venta,
-          fecha,
-        }));
-        setloading(false);
-      } catch (error) {
-        console.error("Error al obtener los datos del banco", error);
-      }
-    };
-
     if (bancoSeleccionado.endpoint) {
       fetchData();
     }
   }, [bancoSeleccionado.endpoint]);
 
-  return { bancoSeleccionado, setBancoSeleccionado, loading };
+  return { bancoSeleccionado, setBancoSeleccionado, loading, fetchData };
 }
