@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from "react";
 import { BancosJson } from "../utils/bancos";
 import { fetchInfo } from "../services/dolarService";
