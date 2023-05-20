@@ -1,12 +1,8 @@
 "use client";
-
 import DolarChart from "./components/DolarChart/DolarChart";
 import DolarInfo from "./components/DolarInfo/DolarInfo";
-import MarqueeComponent from "./components/Marquee";
 
 export default function Inicio() {
-  // const load = loading && isLoading;
-
   return (
     <main className="w-screen">
       <div className="flex flex-col  md:flex-row justify-center md:items-start items-center p-1 gap-5 md:gap-0 ">

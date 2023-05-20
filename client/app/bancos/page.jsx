@@ -9,13 +9,13 @@ export default function Bancos() {
   // const refNav = useRef(null);
   return (
     <div
-      className={`flex justify-center items-center md:gap-20 border-4 h-[calc(100vh-80px)] w-screen`}
+      className={`flex justify-center items-center md:gap-20 border- h-[calc(100vh-80px)] md:h-auto w-screen md:w-auto`}
     >
       <div className="md:w-3/4 gap-5 h-full overflow-y-auto rounded-lg md:p-2 grid grid-cols-1 md:grid-cols-3 justify-center items-center">
         {BancosJson.map((banco) => (
           <div
             key={banco.name}
-            className={`py-2 px-4 h-18 ${
+            className={`py-2 px-4 min-h-[3rem] ${
               banco.name === bancoSeleccionado.name
                 ? "text-lg md:text-xl font-bold border-gray-900 rounded-md border-4"
                 : ""

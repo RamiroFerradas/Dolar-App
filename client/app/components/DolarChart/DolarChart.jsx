@@ -1,9 +1,7 @@
 import useDolarEvolucion from "../../hooks/useEvolutionDolar";
-import Loading from "../../loading";
 import SkeletonField from "../SkeletonField";
 import Chart from "./Chart";
 import SkeletonChart from "./SkeletonChart";
-import ChartSkeleton from "./SkeletonChart";
 
 export default function DolarChart() {
   const { evolucionDolarBlue, evolucionDolarOficial, isLoading, fecha } =
