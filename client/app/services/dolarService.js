@@ -47,6 +47,7 @@ export const getEvolucionDolar = async () => {
 
     const blueData = blue.meses;
     const oficialData = oficial.meses;
+    const fecha = blue.fecha;
 
     const dolarBlue = {
       title: "Dolar blue",
@@ -60,7 +61,7 @@ export const getEvolucionDolar = async () => {
       values: oficialData.map((mes) => Math.floor(Number(mes.valor))),
     };
 
-    return { dolarBlue, dolarOficial };
+    return { dolarBlue, dolarOficial, fecha };
   } catch (error) {
     console.error(error);
     throw error.message;

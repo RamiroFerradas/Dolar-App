@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "./components/Navbar";
-import "./globals.css";
+import "./tailwind-global.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });

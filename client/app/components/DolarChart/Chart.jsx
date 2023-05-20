@@ -22,7 +22,7 @@ ChartJS.register(
   Filler
 );
 
-export default function DolarChart({ data }) {
+export default function Chart({ data }) {
   var midata = {
     labels: data.labels,
     datasets: [
