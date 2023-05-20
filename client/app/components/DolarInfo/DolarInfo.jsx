@@ -7,7 +7,7 @@ export default function DolarInfo() {
 
   return dolarTypes.map(({ title, compra, venta }, i) => {
     return loading ? (
-      <SkeletonDolarInfo />
+      <SkeletonDolarInfo key={i} />
     ) : (
       <div
         key={i}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Routes } from "../routes/routes";
 import Navigation from "./Navigation";
+import logoDolars from "../../public/images/dolarslogo.png";
 
 export default function Navbar({ refNav }) {
   return (
@@ -11,11 +12,11 @@ export default function Navbar({ refNav }) {
     >
       <Link href={Routes.INICIO.path}>
         <Image
-          src="/assets/dolarslogo.png"
+          src={logoDolars}
           alt="LogoDolars"
-          className="object-contain"
-          height={30}
-          width={40}
+          className="object-cover"
+          height={40}
+          width={60}
         />
       </Link>
 

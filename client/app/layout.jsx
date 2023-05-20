@@ -1,5 +1,6 @@
 "use client";
 
+import MarqueeComponent from "./components/Marquee";
 import Navbar from "./components/Navbar";
 import "./tailwind-global.css";
 import { Inter } from "next/font/google";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} `}>
         <Navbar />
+        <MarqueeComponent />
         {children}
       </body>
     </html>
