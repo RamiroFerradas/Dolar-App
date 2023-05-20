@@ -6,4 +6,4 @@ const formatNumber = (value, decimalPlaces) => {
     : "No cotiza";
 };
 
-module.exports = formatNumber;
+module.exports = { formatNumber };

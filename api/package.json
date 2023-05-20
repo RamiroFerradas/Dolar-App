@@ -21,6 +21,8 @@
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "nodemon": "^2.0.22",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
     "web": "0.0.2",
     "xml-js": "^1.6.11"
   }

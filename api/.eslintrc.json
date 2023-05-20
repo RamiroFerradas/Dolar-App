@@ -2,14 +2,20 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "es2020": true,
+    "mocha": true
+  },
+  "globals": {
+    "BigInt": true
   },
   "parser": "babel-eslint",
   "extends": ["eslint:recommended"],
   "rules": {
-    "no-undef": 2,
-    "no-var": 2,
-    "no-const-assign": 2,
-    "no-unused-vars": 1 // Cambiado a nivel de advertencia (warning)
+    "no-undef": ["error", { "typeof": true }],
+    "no-var": "error",
+    "no-restricted-globals": ["off", "BigInt"],
+    "no-const-assign": "error",
+    "no-unused-vars": "warn"
   }
 }

@@ -1,9 +1,13 @@
 const { formatNumber } = require("../util/formatNumber");
-const { getInfoDolar } = require("../services/dolarService");
+const { getInfoDolar } = require("../services/dolarSiService");
 const { getDateTime } = require("../util/getDateTime");
-// const util = require("../util/util");
 
-// const bancosControllers = async () => {
+const ERROR = `Error @ controller/bancosController --> `;
+
+/**
+ * @description Obtener las cotizaciones del Banco BBVA
+ * @returns Un objeto con el valor de compra, el de venta y la fecha y hora de la consulta
+ */
 const getDolarBBVA = async (req, res) => {
   try {
     const data = await getInfoDolar();
@@ -15,7 +19,7 @@ const getDolarBBVA = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -34,7 +38,7 @@ const getDolarPiano = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -53,7 +57,7 @@ const getDolarHipotecario = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -72,7 +76,7 @@ const getDolarGalicia = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -91,7 +95,7 @@ const getDolarSantander = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -110,7 +114,7 @@ const getDolarCiudad = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -129,7 +133,7 @@ const getDolarSupervielle = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -148,7 +152,7 @@ const getDolarPatagonia = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -167,7 +171,7 @@ const getDolarComafi = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -186,7 +190,7 @@ const getDolarNacion = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -205,7 +209,7 @@ const getDolarBIND = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -224,7 +228,7 @@ const getDolarChaco = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -243,7 +247,7 @@ const getDolarPampa = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -262,7 +266,7 @@ const getDolarBancor = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -281,7 +285,7 @@ const getDolarMayorista = async (req, res) => {
     res.send(valores);
   } catch (e) {
     res.sendStatus(500);
-    console.log(e);
+    console.error(ERROR, e.message);
   }
 };
 
@@ -302,6 +306,3 @@ module.exports = {
   getDolarBancor,
   getDolarMayorista,
 };
-// };
-
-// module.exports = bancosControllers;

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { BancosJson } from "../utils/bancos";
-import { fetchInfo } from "../services/dolarService";
+import { fetchInfoBancos } from "../services/bancosService";
+// import { fetchInfo } from "../services/dolarService";
 
 export default function useFetchBancos() {
   const [bancoSeleccionado, setBancoSeleccionado] = useState({
     name: BancosJson[0].name,
-    endpoint: BancosJson[0].endpoint,
+    endpoint: `${BancosJson[0].endpoint}`,
     compra: "",
     venta: "",
     fecha: "",
@@ -16,7 +17,7 @@ export default function useFetchBancos() {
   const fetchData = async () => {
     try {
       setloading(true);
-      const data = await fetchInfo(bancoSeleccionado.endpoint);
+      const data = await fetchInfoBancos(bancoSeleccionado.endpoint);
 
       const { compra, venta, fecha } = data;
 

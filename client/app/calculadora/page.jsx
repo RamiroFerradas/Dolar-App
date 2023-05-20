@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import useFetchDolarTypes from "../hooks/useFetchDolarTypes";
+import { addDotsToNumber } from "../utils/addDotsToNumber";
 
 export default function Calculadora() {
   const [valorIngresado, setValorIngresado] = useState("");
@@ -83,7 +84,7 @@ export default function Calculadora() {
         </button>
       </div>
       <div className="mt-4 text-xl">
-        <strong>Resultado:</strong> {resultado}
+        <strong>Resultado:</strong> ${addDotsToNumber(resultado)}
       </div>
     </div>
   );

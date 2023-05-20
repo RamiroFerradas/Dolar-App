@@ -1,7 +1,7 @@
-import { getDateTime } from "./getDateTime";
-import { formatNumber } from "./util";
+const { formatNumber } = require("./formatNumber");
+const { getDateTime } = require("./getDateTime");
 
-export const getEvolucion = (evolucionAnual) => {
+const getEvolucion = (evolucionAnual) => {
   const now = new Date();
   const mesActual = now.getMonth() + 1;
 
@@ -27,3 +27,5 @@ export const getEvolucion = (evolucionAnual) => {
 
   return valores;
 };
+
+module.exports = { getEvolucion };

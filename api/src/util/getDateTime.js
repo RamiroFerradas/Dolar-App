@@ -1,4 +1,4 @@
-function getDateTime() {
+const getDateTime = () => {
   const now = new Date();
   const year = now.getFullYear();
   let month = now.getMonth() + 1;
@@ -15,6 +15,6 @@ function getDateTime() {
   const dateTime =
     year + "/" + month + "/" + day + " " + hour + ":" + minute + ":" + second;
   return dateTime;
-}
+};
 
-module.exports = getDateTime;
+module.exports = { getDateTime };
