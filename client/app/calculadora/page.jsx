@@ -39,7 +39,7 @@ export default function Calculadora() {
         </label>
         <input
           type="number"
-          className="border border-gray-300 px-4 py-2"
+          className="border border-gray-300 px-4 py-2 text-center"
           value={valorIngresado}
           onChange={handleValorIngresadoChange}
         />
@@ -47,7 +47,7 @@ export default function Calculadora() {
       <div className="flex flex-col mt-4">
         <label className="mb-2">Tipo de cambio:</label>
         <select
-          className="border border-gray-300 px-4 py-2"
+          className="border border-gray-300 px-4 py-2 text-center"
           value={tipoCambio}
           onChange={handleTipoCambioChange}
         >
@@ -70,20 +70,20 @@ export default function Calculadora() {
         </button>
         <button
           disabled={buttonCompraVenta === "compra"}
-          className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 disabled:bg-green-400 isabled:hover:bg-green-500 enabled:hover:bg-green-600"
+          className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 disabled:bg-green-300 isabled:hover:bg-green-500 enabled:hover:bg-green-600"
           onClick={() => setbuttonCompraVenta("compra")}
         >
           Compra
         </button>
         <button
           disabled={buttonCompraVenta === "venta"}
-          className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 disabled:bg-red-400 isabled:hover:bg-red-500 enabled:hover:bg-red-600"
+          className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 disabled:bg-red-300 isabled:hover:bg-red-500 enabled:hover:bg-red-600"
           onClick={() => setbuttonCompraVenta("venta")}
         >
           Venta
         </button>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 text-xl">
         <strong>Resultado:</strong> {resultado}
       </div>
     </div>

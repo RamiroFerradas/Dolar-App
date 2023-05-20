@@ -3,11 +3,19 @@ import { fetchDolar } from "../services/dolarService";
 
 export default function useFetchDolarTypes() {
   const [dolar, setDolar] = useState({});
+  const [loading, setloading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
-      const dolarData = await fetchDolar();
-      setDolar(dolarData);
+      try {
+        setloading(true);
+        const dolarData = await fetchDolar();
+        setDolar(dolarData);
+      } catch (error) {
+        console.error("Error fetching dolar types:", error.message);
+      } finally {
+        setloading(false);
+      }
     }
     fetchData();
   }, []);
@@ -35,5 +43,5 @@ export default function useFetchDolarTypes() {
     },
   ];
 
-  return { dolarTypes };
+  return { dolarTypes, dolar, loading };
 }

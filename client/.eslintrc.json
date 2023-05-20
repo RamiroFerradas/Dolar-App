@@ -9,7 +9,7 @@
     "process": true // Agrega esta línea para declarar que la variable process está definida
   },
   "extends": [
-    "airbnb",
+    // "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"

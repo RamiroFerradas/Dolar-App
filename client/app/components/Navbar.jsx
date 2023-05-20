@@ -9,7 +9,7 @@ export default function Navbar({ refNav }) {
       ref={refNav}
       className="flex justify-between items-center h-20 p-4 bg-green-200 overflow-hidden"
     >
-      <Link href={Routes.HOME.path}>
+      <Link href={Routes.INICIO.path}>
         <Image
           src="/assets/dolarslogo.png"
           alt="LogoDolars"
@@ -20,7 +20,12 @@ export default function Navbar({ refNav }) {
       </Link>
 
       <Navigation
-        pathnames={[Routes.HOME, Routes.BANCOS, Routes.CALCULADORA]}
+        pathnames={[
+          Routes.INICIO,
+          Routes.BANCOS,
+          Routes.CALCULADORA,
+          // Routes.CASAS,
+        ]}
       />
     </nav>
   );

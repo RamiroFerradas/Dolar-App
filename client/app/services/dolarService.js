@@ -67,7 +67,7 @@ export const getEvolucionDolar = async () => {
   }
 };
 
-export const fetchBancoData = async (endpoint) => {
+export const fetchInfo = async (endpoint) => {
   try {
     const response = await fetch(`${BASE_URL}/api${endpoint}`);
     const data = await response.json();
