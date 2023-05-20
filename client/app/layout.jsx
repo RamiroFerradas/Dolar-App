@@ -1,5 +1,3 @@
-"use client";
-
 import MarqueeComponent from "./components/Marquee";
 import Navbar from "./components/Navbar";
 import "./tailwind-global.css";

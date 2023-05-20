@@ -1,9 +1,9 @@
+"use client";
 import Marquee from "react-fast-marquee";
 import { addDotsToNumber } from "../utils/addDotsToNumber";
 import useFetchRandomData from "../hooks/useFetchRandonData";
-
 export default function MarqueeComponent() {
-  const { randomDataTypes } = useFetchRandomData();
+  const { randomDataTypes, loading } = useFetchRandomData();
 
   return (
     <Marquee
@@ -15,9 +15,13 @@ export default function MarqueeComponent() {
     >
       {randomDataTypes.map(({ title, valor }, i) => (
         <div key={i} className="mr-4">
-          <p>
-            {title}: ${addDotsToNumber(valor)}
-          </p>
+          {loading ? (
+            <p className="text-gray-400">.</p>
+          ) : (
+            <p>
+              {title}: ${addDotsToNumber(valor)}
+            </p>
+          )}
         </div>
       ))}
     </Marquee>

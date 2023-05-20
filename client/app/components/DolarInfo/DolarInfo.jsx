@@ -1,5 +1,4 @@
 import useFetchDolarTypes from "../../hooks/useFetchDolarTypes";
-import Loading from "../../loading";
 import SkeletonDolarInfo from "./SkeletonDolarInfo";
 
 export default function DolarInfo() {
