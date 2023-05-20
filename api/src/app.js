@@ -6,6 +6,7 @@ const router = require("./routes/router");
 const cors = require("cors"); // Importa el paquete cors
 const PORT = process.env.PORT || 7070;
 const app = express();
+const morgan = require("morgan");
 
 app.use(cors()); // Usa el middleware cors
 app.options("*", cors()); // Habilita los verbos OPTIONS para todos los recursos
@@ -26,6 +27,7 @@ app.set("port", PORT);
 app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(morgan("dev"));
 app.use("/api", router);
 
 // CORS
