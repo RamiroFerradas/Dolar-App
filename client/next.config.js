@@ -7,7 +7,7 @@ const nextConfig = {
     swcMinfy: true,
     experimental: {
       appDir: true,
-      turbotrace: true,
+      // turbotrace: true,
     },
   },
 };
