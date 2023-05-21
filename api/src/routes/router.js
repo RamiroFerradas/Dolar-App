@@ -1,5 +1,4 @@
 const { Router } = require("express");
-
 const router = Router();
 const bancosRoute = require("./bancos/bancos.js");
 const bcraRoute = require("./bcra/bcra.js");
@@ -9,39 +8,58 @@ const dolarRoute = require("./dolar/dolar.js");
 const realRoute = require("./real/real.js");
 const riesgoRoute = require("./riesgoPais/riesgo.js");
 const evolucionRoute = require("./evolucion/evolucion.js");
+const keepaliveRoute = require("./keep-alive.js");
 
-/**
- * @swagger
- * /api/bancos:
- *   get:
- *     summary: Retorrna lista de endpoints parabancos.
- *     description: Optional extended description in CommonMark or HTML.
- *     responses:
- *       '200':
- *         description: A JSON array of user names
- *         content:
- *           application/json:
- *             schema:
- *               type: array
- *               items:
- *                 type: string
- */
+router.use(
+  "/bancos",
+  bancosRoute
+  // #swagger.tags = ['Bancos']
+  // #swagger.description = 'Endpoints relacionados con bancos'
+);
 
-router
-  .use("/bancos", bancosRoute)
+router.use(
+  "/bcra",
+  bcraRoute
+  // #swagger.tags = ['BCRA']
+  // #swagger.description = 'Endpoints relacionados con BCRA'
+);
 
-  .use("/bcra", bcraRoute)
-
-  .use("/euro", euroRoute)
-
-  .use("/casas", casasRoute)
-
-  .use("/dolar", dolarRoute)
-
-  .use("/real", realRoute)
-
-  .use("/riesgopais", riesgoRoute)
-
-  .use("/evolucion", evolucionRoute);
+router.use(
+  "/euro",
+  euroRoute
+  // #swagger.tags = ['Euro']
+  // #swagger.description = 'Endpoints relacionados con Euro'
+);
+router.use(
+  "/casas",
+  casasRoute
+  // #swagger.tags = ['Casas de cambio']
+  // #swagger.description = 'Endpoints relacionados con Casas de cambio'
+);
+router.use(
+  "/dolar",
+  dolarRoute
+  // #swagger.tags = ['Dolar']
+  // #swagger.description = 'Endpoints relacionados con Dolar'
+);
+router.use(
+  "/real",
+  realRoute
+  // #swagger.tags = ['Real']
+  // #swagger.description = 'Endpoints relacionados con Real'
+);
+router.use(
+  "/riesgopais",
+  riesgoRoute
+  // #swagger.tags = ['Riesgo pais']
+  // #swagger.description = 'Endpoints relacionados con el riesgo pais'
+);
+router.use(
+  "/evolucion",
+  evolucionRoute
+  // #swagger.tags = ['Evolucion']
+  // #swagger.description = 'Endpoints relacionados con evolucion del dolar'
+);
+router.use("/keep-alive", keepaliveRoute);
 
 module.exports = router;

@@ -10,10 +10,10 @@ export const fetchDolar = async () => {
       dolarturistaResponse,
       dolaroficialResponse,
     ] = await Promise.all([
-      fetch(`${BASE_URL}/api/dolar/dolarblue`),
-      fetch(`${BASE_URL}/api/dolar/contadoliqui`),
-      fetch(`${BASE_URL}/api/dolar/dolarturista`),
-      fetch(`${BASE_URL}/api/dolar/dolaroficial`),
+      fetch(`${BASE_URL}/api/dolar/dolarblue`, { next: { revalidate: 60 } }),
+      fetch(`${BASE_URL}/api/dolar/contadoliqui`, { next: { revalidate: 60 } }),
+      fetch(`${BASE_URL}/api/dolar/dolarturista`, { next: { revalidate: 60 } }),
+      fetch(`${BASE_URL}/api/dolar/dolaroficial`, { next: { revalidate: 60 } }),
     ]);
 
     const blue = await blueResponse.json();

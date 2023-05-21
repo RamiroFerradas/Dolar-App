@@ -1,0 +1,888 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3001",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "DEFAULT",
+      "description": ""
+    }
+  ],
+  "schemes": [],
+  "securityDefinitions": {},
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/bancos/": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/bancos/bbva": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/piano": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/hipotecario": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/galicia": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/santander": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/ciudad": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/supervielle": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/patagonia": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/comafi": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/nacion": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/bind": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/chaco": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/pampa": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/bancor": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bancos/mayorista": {
+      "get": {
+        "tags": ["Bancos"],
+        "description": "Endpoints relacionados con bancos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bcra/": {
+      "get": {
+        "tags": ["BCRA"],
+        "description": "Endpoints relacionados con BCRA",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/bcra/reservas": {
+      "get": {
+        "tags": ["BCRA"],
+        "description": "Endpoints relacionados con BCRA",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/bcra/circulante": {
+      "get": {
+        "tags": ["BCRA"],
+        "description": "Endpoints relacionados con BCRA",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/euro/nacion": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/galicia": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/bbva": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/pampa": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/chaco": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/euro/hipotecario": {
+      "get": {
+        "tags": ["Euro"],
+        "description": "Endpoints relacionados con Euro",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/casas/caba/metropolis": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/caba/alpe": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/caba/vaccaro": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/caba/transatlantica": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/lp/tilos": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/mdp/jonestur": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/mdp/moneta": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/mdp/exchange": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/rosario/daminato": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/mendoza/montemar": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/casas/tucuman/maguitur": {
+      "get": {
+        "tags": ["Casas de cambio"],
+        "description": "Endpoints relacionados con Casas de cambio",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/dolar/reservas": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/all": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/dolaroficial": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/dolarblue": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/contadoliqui": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/dolarpromedio": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/dolarbolsa": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/dolar/dolarturista": {
+      "get": {
+        "tags": ["Dolar"],
+        "description": "Endpoints relacionados con Dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/real/": {
+      "get": {
+        "tags": ["Real"],
+        "description": "Endpoints relacionados con Real",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/real/nacion": {
+      "get": {
+        "tags": ["Real"],
+        "description": "Endpoints relacionados con Real",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/real/bbva": {
+      "get": {
+        "tags": ["Real"],
+        "description": "Endpoints relacionados con Real",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/real/chaco": {
+      "get": {
+        "tags": ["Real"],
+        "description": "Endpoints relacionados con Real",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/riesgopais/": {
+      "get": {
+        "tags": ["Riesgo pais"],
+        "description": "Endpoints relacionados con el riesgo pais",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/evolucion/": {
+      "get": {
+        "tags": ["Evolucion"],
+        "description": "Endpoints relacionados con evolucion del dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/evolucion/dolaroficial": {
+      "get": {
+        "tags": ["Evolucion"],
+        "description": "Endpoints relacionados con evolucion del dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/evolucion/dolarblue": {
+      "get": {
+        "tags": ["Evolucion"],
+        "description": "Endpoints relacionados con evolucion del dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/evolucion/realoficial": {
+      "get": {
+        "tags": ["Evolucion"],
+        "description": "Endpoints relacionados con evolucion del dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/evolucion/eurooficial": {
+      "get": {
+        "tags": ["Evolucion"],
+        "description": "Endpoints relacionados con evolucion del dolar",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/keep-alive/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs.json": {
+      "get": {
+        "description": "",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

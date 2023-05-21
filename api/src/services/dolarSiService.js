@@ -25,6 +25,24 @@ const getInfoDolar = async () => {
   }
 };
 
+// Función para realizar la solicitud cada 10 minutos
+// const keepServerAlive = () => {
+//   setInterval(async () => {
+//     try {
+//       await axios.get("/keep-alive");
+//       console.log("Solicitud de mantenimiento enviada");
+//     } catch (error) {
+//       console.log(
+//         "Error al enviar la solicitud de mantenimiento",
+//         error.message
+//       );
+//     }
+//   }, 1 * 60 * 1000); // 10 minutos en milisegundos
+// };
+
+// Llamar a la función para mantener vivo el servidor
+// keepServerAlive();
+
 module.exports = {
   getInfoDolar,
 };
