@@ -2,10 +2,9 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const outputFile = "./swagger_output.json";
 const endpointsFiles = ["./src/routes/*.js"];
-const HOST = process.env.HOST;
 
 const doc = {
-  host: HOST,
+  host: "http://localhost:3001/",
   basePath: "/api",
 };
 
@@ -26,6 +25,6 @@ const swaggerDocs = (app) => {
   });
 };
 
-console.log(`📕 Documentacion disponible en "${HOST}/api/docs"`);
+console.log(`📕 Documentacion disponible en "http://localhost:3001//api/docs"`);
 
 module.exports = { swaggerDocs };
