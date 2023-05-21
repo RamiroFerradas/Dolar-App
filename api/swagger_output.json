@@ -670,23 +670,6 @@
         }
       }
     },
-    "/dolar/reservas": {
-      "get": {
-        "tags": [
-          "Dolar"
-        ],
-        "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
     "/dolar/all": {
       "get": {
         "tags": [

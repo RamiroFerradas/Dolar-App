@@ -185,7 +185,7 @@ module.exports = {
   getContadoConLiqui,
   getDolarPromedio,
   getDolarBolsa,
+  getDolarTurista,
   getEvolucionDolarOficial,
   getEvolucionDolarBlue,
-  getDolarTurista,
 };

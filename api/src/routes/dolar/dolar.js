@@ -27,7 +27,6 @@ router.get("/", (req, res) => {
 });
 
 router
-  .get("/reservas", getAllValues)
   .get("/all", getAllValues)
   .get("/dolaroficial", getDolarOficial)
   .get("/dolarblue", getDolarBlue)
