@@ -10,7 +10,6 @@ const doc = {
 
 const generateSwaggerSpec = async () => {
   await swaggerAutogen(outputFile, endpointsFiles, doc);
-  console.log("Swagger spec generado exitosamente");
 };
 
 const swaggerUi = require("swagger-ui-express");
