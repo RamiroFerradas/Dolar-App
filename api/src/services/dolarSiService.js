@@ -17,8 +17,6 @@ const getInfoDolar = async () => {
   try {
     const dataDolar = await axios.get(DOLARSI_URL);
     const jsonParsed = parseJson(dataDolar.data);
-    console.log(jsonParsed.cortiza);
-
     return jsonParsed;
   } catch (e) {
     console.log(e.message);
