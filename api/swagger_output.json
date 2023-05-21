@@ -29,7 +29,9 @@
     },
     "/bancos/": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -41,7 +43,9 @@
     },
     "/bancos/bbva": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -56,7 +60,9 @@
     },
     "/bancos/piano": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -71,7 +77,9 @@
     },
     "/bancos/hipotecario": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -86,7 +94,9 @@
     },
     "/bancos/galicia": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -101,7 +111,9 @@
     },
     "/bancos/santander": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -116,7 +128,9 @@
     },
     "/bancos/ciudad": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -131,7 +145,9 @@
     },
     "/bancos/supervielle": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -146,7 +162,9 @@
     },
     "/bancos/patagonia": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -161,7 +179,9 @@
     },
     "/bancos/comafi": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -176,7 +196,9 @@
     },
     "/bancos/nacion": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -191,7 +213,9 @@
     },
     "/bancos/bind": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -206,7 +230,9 @@
     },
     "/bancos/chaco": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -221,7 +247,9 @@
     },
     "/bancos/pampa": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -236,7 +264,9 @@
     },
     "/bancos/bancor": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -251,7 +281,9 @@
     },
     "/bancos/mayorista": {
       "get": {
-        "tags": ["Bancos"],
+        "tags": [
+          "Bancos"
+        ],
         "description": "Endpoints relacionados con bancos",
         "parameters": [],
         "responses": {
@@ -266,7 +298,9 @@
     },
     "/bcra/": {
       "get": {
-        "tags": ["BCRA"],
+        "tags": [
+          "BCRA"
+        ],
         "description": "Endpoints relacionados con BCRA",
         "parameters": [],
         "responses": {
@@ -278,7 +312,9 @@
     },
     "/bcra/reservas": {
       "get": {
-        "tags": ["BCRA"],
+        "tags": [
+          "BCRA"
+        ],
         "description": "Endpoints relacionados con BCRA",
         "parameters": [],
         "responses": {
@@ -293,7 +329,9 @@
     },
     "/bcra/circulante": {
       "get": {
-        "tags": ["BCRA"],
+        "tags": [
+          "BCRA"
+        ],
         "description": "Endpoints relacionados con BCRA",
         "parameters": [],
         "responses": {
@@ -308,7 +346,9 @@
     },
     "/euro/": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -320,7 +360,9 @@
     },
     "/euro/nacion": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -335,7 +377,9 @@
     },
     "/euro/galicia": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -350,7 +394,9 @@
     },
     "/euro/bbva": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -365,7 +411,9 @@
     },
     "/euro/pampa": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -380,7 +428,9 @@
     },
     "/euro/chaco": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -395,7 +445,9 @@
     },
     "/euro/hipotecario": {
       "get": {
-        "tags": ["Euro"],
+        "tags": [
+          "Euro"
+        ],
         "description": "Endpoints relacionados con Euro",
         "parameters": [],
         "responses": {
@@ -410,7 +462,9 @@
     },
     "/casas/": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -422,7 +476,9 @@
     },
     "/casas/caba/metropolis": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -437,7 +493,9 @@
     },
     "/casas/caba/alpe": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -452,7 +510,9 @@
     },
     "/casas/caba/vaccaro": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -467,7 +527,9 @@
     },
     "/casas/caba/transatlantica": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -482,7 +544,9 @@
     },
     "/casas/lp/tilos": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -497,7 +561,9 @@
     },
     "/casas/mdp/jonestur": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -512,7 +578,9 @@
     },
     "/casas/mdp/moneta": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -527,7 +595,9 @@
     },
     "/casas/mdp/exchange": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -542,7 +612,9 @@
     },
     "/casas/rosario/daminato": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -557,7 +629,9 @@
     },
     "/casas/mendoza/montemar": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -572,7 +646,9 @@
     },
     "/casas/tucuman/maguitur": {
       "get": {
-        "tags": ["Casas de cambio"],
+        "tags": [
+          "Casas de cambio"
+        ],
         "description": "Endpoints relacionados con Casas de cambio",
         "parameters": [],
         "responses": {
@@ -587,7 +663,9 @@
     },
     "/dolar/": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -599,7 +677,9 @@
     },
     "/dolar/reservas": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -614,7 +694,9 @@
     },
     "/dolar/all": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -629,7 +711,9 @@
     },
     "/dolar/dolaroficial": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -644,7 +728,9 @@
     },
     "/dolar/dolarblue": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -659,7 +745,9 @@
     },
     "/dolar/contadoliqui": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -674,7 +762,9 @@
     },
     "/dolar/dolarpromedio": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -689,7 +779,9 @@
     },
     "/dolar/dolarbolsa": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -704,7 +796,9 @@
     },
     "/dolar/dolarturista": {
       "get": {
-        "tags": ["Dolar"],
+        "tags": [
+          "Dolar"
+        ],
         "description": "Endpoints relacionados con Dolar",
         "parameters": [],
         "responses": {
@@ -719,7 +813,9 @@
     },
     "/real/": {
       "get": {
-        "tags": ["Real"],
+        "tags": [
+          "Real"
+        ],
         "description": "Endpoints relacionados con Real",
         "parameters": [],
         "responses": {
@@ -731,7 +827,9 @@
     },
     "/real/nacion": {
       "get": {
-        "tags": ["Real"],
+        "tags": [
+          "Real"
+        ],
         "description": "Endpoints relacionados con Real",
         "parameters": [],
         "responses": {
@@ -746,7 +844,9 @@
     },
     "/real/bbva": {
       "get": {
-        "tags": ["Real"],
+        "tags": [
+          "Real"
+        ],
         "description": "Endpoints relacionados con Real",
         "parameters": [],
         "responses": {
@@ -761,7 +861,9 @@
     },
     "/real/chaco": {
       "get": {
-        "tags": ["Real"],
+        "tags": [
+          "Real"
+        ],
         "description": "Endpoints relacionados con Real",
         "parameters": [],
         "responses": {
@@ -776,7 +878,9 @@
     },
     "/riesgopais/": {
       "get": {
-        "tags": ["Riesgo pais"],
+        "tags": [
+          "Riesgo pais"
+        ],
         "description": "Endpoints relacionados con el riesgo pais",
         "parameters": [],
         "responses": {
@@ -791,7 +895,9 @@
     },
     "/evolucion/": {
       "get": {
-        "tags": ["Evolucion"],
+        "tags": [
+          "Evolucion"
+        ],
         "description": "Endpoints relacionados con evolucion del dolar",
         "parameters": [],
         "responses": {
@@ -803,7 +909,9 @@
     },
     "/evolucion/dolaroficial": {
       "get": {
-        "tags": ["Evolucion"],
+        "tags": [
+          "Evolucion"
+        ],
         "description": "Endpoints relacionados con evolucion del dolar",
         "parameters": [],
         "responses": {
@@ -818,7 +926,9 @@
     },
     "/evolucion/dolarblue": {
       "get": {
-        "tags": ["Evolucion"],
+        "tags": [
+          "Evolucion"
+        ],
         "description": "Endpoints relacionados con evolucion del dolar",
         "parameters": [],
         "responses": {
@@ -833,7 +943,9 @@
     },
     "/evolucion/realoficial": {
       "get": {
-        "tags": ["Evolucion"],
+        "tags": [
+          "Evolucion"
+        ],
         "description": "Endpoints relacionados con evolucion del dolar",
         "parameters": [],
         "responses": {
@@ -848,7 +960,9 @@
     },
     "/evolucion/eurooficial": {
       "get": {
-        "tags": ["Evolucion"],
+        "tags": [
+          "Evolucion"
+        ],
         "description": "Endpoints relacionados con evolucion del dolar",
         "parameters": [],
         "responses": {
@@ -875,7 +989,9 @@
     "/api/docs.json": {
       "get": {
         "description": "",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
