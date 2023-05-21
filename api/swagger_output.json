@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3001",
+  "host": "http://localhost:3001",
   "basePath": "/api",
   "tags": [
     {

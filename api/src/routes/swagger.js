@@ -2,6 +2,7 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const outputFile = "./swagger_output.json";
 const endpointsFiles = ["./src/routes/*.js"];
+const HOST = process.env.HOST;
 
 const doc = {
   info: {
@@ -9,7 +10,7 @@ const doc = {
     title: "", // by default: 'REST API'
     description: "", // by default: ''
   },
-  host: "localhost:3001",
+  host: HOST,
   basePath: "/api", // by default: '/'
   schemes: [], // by default: ['http']
   consumes: [], // by default: ['application/json']
@@ -31,10 +32,6 @@ const generateSwaggerSpec = async () => {
   await swaggerAutogen(outputFile, endpointsFiles, doc);
   console.log("Swagger spec generado exitosamente");
 };
-
-// const swaggerAutogen = require("swagger-autogen")();
-
-// generateSwaggerSpec(); // Llama a la función para generar el Swagger spec
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("../../swagger_output.json");
