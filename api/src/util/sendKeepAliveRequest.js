@@ -1,4 +1,6 @@
-const sendKeepAliveRequest = (url) => {
+const sendKeepAliveRequest = (url, min = 0) => {
+  const time = min * 60 * 1000;
+
   setInterval(async () => {
     try {
       await fetch(`${url}/api/keep-alive`);
@@ -10,7 +12,7 @@ const sendKeepAliveRequest = (url) => {
       );
       throw new Error("Error al enviar la solicitud de mantenimiento");
     }
-  }, 14 * 60 * 1000);
+  }, time);
 };
 
 module.exports = { sendKeepAliveRequest };
