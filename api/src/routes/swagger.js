@@ -5,27 +5,8 @@ const endpointsFiles = ["./src/routes/*.js"];
 const HOST = process.env.HOST;
 
 const doc = {
-  info: {
-    version: "", // by default: '1.0.0'
-    title: "", // by default: 'REST API'
-    description: "", // by default: ''
-  },
   host: HOST,
-  basePath: "/api", // by default: '/'
-  schemes: [], // by default: ['http']
-  consumes: [], // by default: ['application/json']
-  produces: [], // by default: ['application/json']
-  tags: [
-    // by default: empty Array
-    {
-      name: "DEFAULT", // Tag name
-      description: "", // Tag description
-    },
-    // { ... }
-  ],
-  securityDefinitions: {}, // by default: empty object
-  definitions: {}, // by default: empty object (Swagger 2.0)
-  components: {}, // by default: empty object (OpenAPI 3.x)
+  basePath: "/api",
 };
 
 const generateSwaggerSpec = async () => {
@@ -45,6 +26,6 @@ const swaggerDocs = (app) => {
   });
 };
 
-console.log(`📕 Documentacion disponible en "http://localhost:3001/api/docs"`);
+console.log(`📕 Documentacion disponible en "${HOST}/api/docs"`);
 
 module.exports = { swaggerDocs };

@@ -7,14 +7,9 @@
   },
   "host": "http://localhost:3001",
   "basePath": "/api",
-  "tags": [
-    {
-      "name": "DEFAULT",
-      "description": ""
-    }
+  "schemes": [
+    "http"
   ],
-  "schemes": [],
-  "securityDefinitions": {},
   "paths": {
     "/": {
       "get": {
