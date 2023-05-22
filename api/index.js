@@ -13,8 +13,8 @@ if (!DOLARSI_URL) {
 
 // Iniciando el servidor
 app.listen(PORT, async () => {
-  sendKeepAliveRequest(HOST, 5);
-  swaggerDocs(app, PORT);
+  // sendKeepAliveRequest(HOST, 5);
   console.log("✅ URL API CONFIGURADA");
   console.log(`🚀 Server listening at port: ${PORT}`);
+  swaggerDocs(app, PORT);
 });
