@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run open-swagger && nodemon -L",
+    "start": "node .",
+    "dev": "npm run open-swagger && nodemon -L",
     "open-swagger": "opener http://localhost:3001/api/docs/",
     "lint": "eslint \"./**/*.js\""
   },
