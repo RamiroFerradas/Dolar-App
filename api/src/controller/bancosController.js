@@ -8,6 +8,7 @@ const ERROR = `Error @ controller/bancosController --> `;
  * @description Obtener las cotizaciones del Banco BBVA
  * @returns Un objeto con el valor de compra, el de venta y la fecha y hora de la consulta
  */
+
 const getDolarBBVA = async (req, res) => {
   try {
     const data = await getInfoDolar();

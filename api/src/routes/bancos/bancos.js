@@ -22,19 +22,19 @@ const {
  * @description Rutas bancos
  */
 
-router.get("/", (req, res) => {
-  const availableEndpoints = router.stack
-    .slice(1)
-    .filter((layer) => layer.route)
-    .map((layer) => layer.route.path);
-
-  const message = `Endpoints disponibles en la sección de bancos: ${availableEndpoints.join(
-    ", "
-  )}`;
-  res.send(message);
-});
-
 router
+  .get("/", (req, res) => {
+    const availableEndpoints = router.stack
+      .slice(1)
+      .filter((layer) => layer.route)
+      .map((layer) => layer.route.path);
+
+    const message = `Endpoints disponibles en la sección de bancos: ${availableEndpoints.join(
+      ", "
+    )}`;
+    res.send(message);
+  })
+
   .get("/bbva", getDolarBBVA)
   .get("/piano", getDolarPiano)
   .get("/hipotecario", getDolarHipotecario)

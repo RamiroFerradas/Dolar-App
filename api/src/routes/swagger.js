@@ -24,6 +24,6 @@ const swaggerDocs = (app) => {
   });
 };
 
-console.log(`📕 Documentacion disponible en "http://localhost:3001//api/docs"`);
+console.log(`📕 Documentacion disponible en http://localhost:3001/api/docs/`);
 
 module.exports = { swaggerDocs };

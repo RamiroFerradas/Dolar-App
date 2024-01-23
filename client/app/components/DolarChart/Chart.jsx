@@ -23,6 +23,22 @@ ChartJS.register(
 );
 
 export default function Chart({ data }) {
+  const adjustedMax = misoptions?.scales?.y?.max
+    ? misoptions.scales.y.max + 500
+    : misoptions?.scales?.y?.max;
+
+  var misoptions = {
+    scales: {
+      y: {
+        min: 100,
+        max: adjustedMax,
+      },
+      x: {
+        ticks: { color: "rgb(255, 99, 132)" },
+      },
+    },
+  };
+
   var midata = {
     labels: data.labels,
     datasets: [
@@ -37,23 +53,8 @@ export default function Chart({ data }) {
         pointBorderColor: "rgb(185, 249, 175)",
         pointBackgroundColor: "rgb(3, 147, 37)",
       },
-      // {
-      //   label: "Otra línea",
-      //   data: [20, 25, 60, 65, 45, 10, 0, 25, 35, 7, 20, 25],
-      // },
     ],
   };
 
-  var misoptions = {
-    scales: {
-      y: {
-        min: 100,
-        max: 500,
-      },
-      x: {
-        ticks: { color: "rgb(255, 99, 132)" },
-      },
-    },
-  };
   return <Line data={midata} options={misoptions} />;
 }

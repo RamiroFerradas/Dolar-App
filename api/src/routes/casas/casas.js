@@ -18,19 +18,18 @@ const {
  * @description Rutas casas de cambio
  */
 
-router.get("/", (req, res) => {
-  const availableEndpoints = router.stack
-    .slice(1)
-    .filter((layer) => layer.route)
-    .map((layer) => layer.route.path);
-
-  const message = `Endpoints disponibles en la sección de casas de cambio: ${availableEndpoints.join(
-    ", "
-  )}`;
-  res.send(message);
-});
-
 router
+  .get("/", (req, res) => {
+    const availableEndpoints = router.stack
+      .slice(1)
+      .filter((layer) => layer.route)
+      .map((layer) => layer.route.path);
+
+    const message = `Endpoints disponibles en la sección de casas de cambio: ${availableEndpoints.join(
+      ", "
+    )}`;
+    res.send(message);
+  })
   .get("/caba/metropolis", getDolarMetro)
   .get("/caba/alpe", getDolarAlpe)
   .get("/caba/vaccaro", getDolarVaccaro)

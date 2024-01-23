@@ -14,7 +14,6 @@
     "/": {
       "get": {
         "description": "",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -28,7 +27,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -42,7 +40,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -59,7 +56,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -76,7 +72,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -93,7 +88,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -110,7 +104,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -127,7 +120,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -144,7 +136,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -161,7 +152,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -178,7 +168,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -195,7 +184,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -212,7 +200,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -229,7 +216,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -246,7 +232,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -263,7 +248,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -280,7 +264,6 @@
           "Bancos"
         ],
         "description": "Endpoints relacionados con bancos",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -297,7 +280,6 @@
           "BCRA"
         ],
         "description": "Endpoints relacionados con BCRA",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -311,7 +293,6 @@
           "BCRA"
         ],
         "description": "Endpoints relacionados con BCRA",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -328,7 +309,6 @@
           "BCRA"
         ],
         "description": "Endpoints relacionados con BCRA",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -345,7 +325,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -359,7 +338,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -376,7 +354,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -393,7 +370,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -410,7 +386,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -427,7 +402,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -444,7 +418,6 @@
           "Euro"
         ],
         "description": "Endpoints relacionados con Euro",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -461,7 +434,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -475,7 +447,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -492,7 +463,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -509,7 +479,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -526,7 +495,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -543,7 +511,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -560,7 +527,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -577,7 +543,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -594,7 +559,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -611,7 +575,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -628,7 +591,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -645,7 +607,6 @@
           "Casas de cambio"
         ],
         "description": "Endpoints relacionados con Casas de cambio",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -662,7 +623,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -676,7 +636,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -693,7 +652,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -710,7 +668,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -727,7 +684,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -744,7 +700,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -761,7 +716,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -778,7 +732,6 @@
           "Dolar"
         ],
         "description": "Endpoints relacionados con Dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -795,7 +748,6 @@
           "Real"
         ],
         "description": "Endpoints relacionados con Real",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -809,7 +761,6 @@
           "Real"
         ],
         "description": "Endpoints relacionados con Real",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -826,7 +777,6 @@
           "Real"
         ],
         "description": "Endpoints relacionados con Real",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -843,7 +793,6 @@
           "Real"
         ],
         "description": "Endpoints relacionados con Real",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -860,7 +809,6 @@
           "Riesgo pais"
         ],
         "description": "Endpoints relacionados con el riesgo pais",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -877,7 +825,6 @@
           "Evolucion"
         ],
         "description": "Endpoints relacionados con evolucion del dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -891,7 +838,6 @@
           "Evolucion"
         ],
         "description": "Endpoints relacionados con evolucion del dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -908,7 +854,6 @@
           "Evolucion"
         ],
         "description": "Endpoints relacionados con evolucion del dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -925,7 +870,6 @@
           "Evolucion"
         ],
         "description": "Endpoints relacionados con evolucion del dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -942,7 +886,6 @@
           "Evolucion"
         ],
         "description": "Endpoints relacionados con evolucion del dolar",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -956,7 +899,6 @@
     "/keep-alive/": {
       "get": {
         "description": "",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -970,7 +912,6 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
